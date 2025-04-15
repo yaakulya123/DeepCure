@@ -120,9 +120,6 @@ open DeepCure.xcodeproj
 - `QRHealthProfileView.swift`: QR code-based health profile
 - `AIGuidanceView.swift`: AI-powered medical assistant
 
-## Contributing
-Please read [CONTRIBUTING.md](link-to-contributing) for details on our code of conduct and the process for submitting pull requests.
-
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
