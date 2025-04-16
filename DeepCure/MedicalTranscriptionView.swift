@@ -27,6 +27,8 @@ struct MedicalTranscriptionView: View {
     @State private var recordingVisualization: [CGFloat] = Array(repeating: 0, count: 30)
     @State private var selectedTab = 0
     @State private var savedRecordings: [Recording] = []
+    @State private var permissionDenied = false
+    @State private var permissionErrorMessage = ""
     
     // Sample medical terms for demonstration
     let medicalTerms = ["hypertension", "myocardial infarction", "atherosclerosis", "hypercholesterolemia"]
@@ -41,7 +43,9 @@ struct MedicalTranscriptionView: View {
             .pickerStyle(SegmentedPickerStyle())
             .padding()
             
-            if selectedTab == 0 {
+            if permissionDenied {
+                permissionDeniedView
+            } else if selectedTab == 0 {
                 recordingView
             } else {
                 recordingsHistoryView
@@ -335,18 +339,75 @@ struct MedicalTranscriptionView: View {
         }
     }
     
+    // Permission denied view
+    var permissionDeniedView: some View {
+        VStack(spacing: 20) {
+            Image(systemName: "mic.slash.circle")
+                .font(.system(size: 70))
+                .foregroundColor(.red.opacity(0.8))
+                .padding(.bottom, 10)
+            
+            Text("Microphone Access Required")
+                .font(.title2)
+                .fontWeight(.semibold)
+            
+            Text(permissionErrorMessage.isEmpty ? 
+                 "DeepCure needs microphone and speech recognition permissions to transcribe medical conversations. Please enable these in your device settings." : 
+                 permissionErrorMessage)
+                .foregroundColor(.secondary)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal)
+            
+            Button(action: {
+                if let url = URL(string: UIApplication.openSettingsURLString) {
+                    UIApplication.shared.open(url)
+                }
+            }) {
+                HStack {
+                    Image(systemName: "gear")
+                    Text("Open Settings")
+                }
+                .padding()
+                .background(Color.blue)
+                .foregroundColor(.white)
+                .cornerRadius(10)
+            }
+            .padding(.top)
+        }
+        .padding()
+    }
+    
     // Set up speech recognition
     private func setupSpeech() {
         recordingSession = AVAudioSession.sharedInstance()
         
         do {
-            try recordingSession?.setCategory(.record, mode: .default)
-            try recordingSession?.setActive(true)
+            try recordingSession?.setCategory(.playAndRecord, mode: .default, options: [.defaultToSpeaker, .allowBluetooth])
+            try recordingSession?.setActive(true, options: .notifyOthersOnDeactivation)
             
             speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US"))
             
+            // Handle authorization status
             SFSpeechRecognizer.requestAuthorization { status in
-                // Handle authorization status
+                DispatchQueue.main.async {
+                    switch status {
+                    case .authorized:
+                        print("Speech recognition authorized")
+                        // Ready to record
+                    case .denied:
+                        print("Speech recognition authorization denied")
+                        permissionDenied = true
+                        permissionErrorMessage = "Speech recognition authorization denied. Please enable permissions in your device settings."
+                    case .restricted, .notDetermined:
+                        print("Speech recognition not authorized")
+                        permissionDenied = true
+                        permissionErrorMessage = "Speech recognition is restricted or not determined. Please check your device settings."
+                    @unknown default:
+                        print("Unknown authorization status")
+                        permissionDenied = true
+                        permissionErrorMessage = "Unknown authorization status. Please check your device settings."
+                    }
+                }
             }
         } catch {
             print("Failed to set up recording session: \(error.localizedDescription)")
@@ -355,6 +416,13 @@ struct MedicalTranscriptionView: View {
     
     // Start recording and transcribing
     private func startRecording() {
+        // Check speech recognizer availability
+        guard let speechRecognizer = speechRecognizer, speechRecognizer.isAvailable else {
+            print("Speech recognizer is not available")
+            // Could show an alert to the user
+            return
+        }
+        
         isRecording = true
         recordingDuration = 0
         
@@ -371,40 +439,56 @@ struct MedicalTranscriptionView: View {
             
             recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
             
-            let inputNode = audioEngine.inputNode
-            
             guard let recognitionRequest = recognitionRequest else {
-                fatalError("Unable to create recognition request")
+                print("Unable to create recognition request")
+                isRecording = false
+                return
             }
             
             recognitionRequest.shouldReportPartialResults = true
             
-            recognitionTask = speechRecognizer?.recognitionTask(with: recognitionRequest) { result, error in
+            // Start recognition task
+            recognitionTask = speechRecognizer.recognitionTask(with: recognitionRequest) { result, error in
                 var isFinal = false
                 
                 if let result = result {
-                    transcribedText = result.bestTranscription.formattedString
+                    self.transcribedText = result.bestTranscription.formattedString
                     isFinal = result.isFinal
                 }
                 
-                if error != nil || isFinal {
-                    audioEngine.stop()
-                    inputNode.removeTap(onBus: 0)
-                    
+                if let error = error {
+                    print("Recognition error: \(error.localizedDescription)")
+                    self.audioEngine.stop()
+                    self.audioEngine.inputNode.removeTap(onBus: 0)
+                    self.recognitionRequest = nil
+                    self.recognitionTask = nil
+                    self.isRecording = false
+                    return
+                }
+                
+                if isFinal {
+                    self.audioEngine.stop()
+                    self.audioEngine.inputNode.removeTap(onBus: 0)
                     self.recognitionRequest = nil
                     self.recognitionTask = nil
                 }
             }
             
+            let inputNode = audioEngine.inputNode
             let recordingFormat = inputNode.outputFormat(forBus: 0)
+            
             inputNode.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { buffer, _ in
-                recognitionRequest.append(buffer)
+                self.recognitionRequest?.append(buffer)
             }
             
             audioEngine.prepare()
             try audioEngine.start()
         } catch {
             print("Recording failed: \(error.localizedDescription)")
+            isRecording = false
+            recordingTimer?.invalidate()
+            recordingTimer = nil
+            // Could show an alert to the user
         }
     }
     

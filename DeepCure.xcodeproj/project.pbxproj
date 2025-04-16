@@ -10,9 +10,22 @@
 		C2EF3A552DAB2B6E0029231C /* DeepCure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepCure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C2CFD41C2DAEA89D00952663 /* Exceptions for "DeepCure" folder in "DeepCure" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C2EF3A542DAB2B6E0029231C /* DeepCure */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C2EF3A572DAB2B6E0029231C /* DeepCure */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C2CFD41C2DAEA89D00952663 /* Exceptions for "DeepCure" folder in "DeepCure" target */,
+			);
 			path = DeepCure;
 			sourceTree = "<group>";
 		};
@@ -249,15 +262,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = DeepCure/DeepCure.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DeepCure/Preview Content\"";
 				DEVELOPMENT_TEAM = X64M3CK252;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeepCure/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "DeepCure needs access to your microphone to record and transcribe medical conversations.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "DeepCure needs access to speech recognition to transcribe your medical conversations.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "/Users/yaakulyasabbani/Downloads/bea2faa9-8994-4563-8a15-8d12e1432ccd.png";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -278,15 +297,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = DeepCure/DeepCure.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DeepCure/Preview Content\"";
 				DEVELOPMENT_TEAM = X64M3CK252;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeepCure/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "DeepCure needs access to your microphone to record and transcribe medical conversations.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "DeepCure needs access to speech recognition to transcribe your medical conversations.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "/Users/yaakulyasabbani/Downloads/bea2faa9-8994-4563-8a15-8d12e1432ccd.png";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
