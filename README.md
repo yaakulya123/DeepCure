@@ -6,6 +6,9 @@
 
 DeepCure is an innovative iOS mobile application aimed at revolutionizing personal healthcare management through artificial intelligence, secure data storage, and intuitive user interfaces. The app enables users to manage their medical records, transcribe medical conversations, generate shareable QR health profiles, and receive AI-powered medical guidance.
 
+![image](https://github.com/user-attachments/assets/50d7a0ce-c63c-40c2-8fce-a38c37987096)
+
+
 ## Current Implementation Status (April 15, 2025)
 
 ### Completed Features
@@ -116,9 +119,6 @@ open DeepCure.xcodeproj
 - `MedicalRecordsView.swift`: Medical records management
 - `QRHealthProfileView.swift`: QR code-based health profile
 - `AIGuidanceView.swift`: AI-powered medical assistant
-
-## Contributing
-Please read [CONTRIBUTING.md](link-to-contributing) for details on our code of conduct and the process for submitting pull requests.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
