@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C27ECFA42DC85F75001397F9 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C27ECFA32DC85F75001397F9 /* FirebaseFirestore */; };
+		C27ECFA82DC861BA001397F9 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C27ECFA72DC861BA001397F9 /* FirebaseStorage */; };
+		C27EE6A92DC6F20D0075B666 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C27EE6A82DC6F20D0075B666 /* FirebaseAnalytics */; };
+		C27EE6AB2DC6F20D0075B666 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = C27EE6AA2DC6F20D0075B666 /* FirebaseCore */; };
+		C27EE6AE2DC6F52A0075B666 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = C27EE6AD2DC6F52A0075B666 /* GoogleSignIn */; };
+		C27EE6B02DC6F52A0075B666 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C27EE6AF2DC6F52A0075B666 /* GoogleSignInSwift */; };
+		C27EE6B22DC6F57A0075B666 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C27EE6B12DC6F57A0075B666 /* FirebaseAuth */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C2EF3A552DAB2B6E0029231C /* DeepCure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepCure.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C2CFD41C2DAEA89D00952663 /* Exceptions for "DeepCure" folder in "DeepCure" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C2EF3A542DAB2B6E0029231C /* DeepCure */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C2EF3A572DAB2B6E0029231C /* DeepCure */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C2CFD41C2DAEA89D00952663 /* Exceptions for "DeepCure" folder in "DeepCure" target */,
+			);
+			path = DeepCure;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2EF3A522DAB2B6E0029231C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C27EE6AB2DC6F20D0075B666 /* FirebaseCore in Frameworks */,
+				C27EE6B22DC6F57A0075B666 /* FirebaseAuth in Frameworks */,
+				C27EE6A92DC6F20D0075B666 /* FirebaseAnalytics in Frameworks */,
+				C27EE6AE2DC6F52A0075B666 /* GoogleSignIn in Frameworks */,
+				C27ECFA82DC861BA001397F9 /* FirebaseStorage in Frameworks */,
+				C27EE6B02DC6F52A0075B666 /* GoogleSignInSwift in Frameworks */,
+				C27ECFA42DC85F75001397F9 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2EF3A4C2DAB2B6E0029231C = {
+			isa = PBXGroup;
+			children = (
+				C2EF3A572DAB2B6E0029231C /* DeepCure */,
+				C2EF3A562DAB2B6E0029231C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2EF3A562DAB2B6E0029231C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2EF3A552DAB2B6E0029231C /* DeepCure.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2EF3A542DAB2B6E0029231C /* DeepCure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2EF3A632DAB2B6F0029231C /* Build configuration list for PBXNativeTarget "DeepCure" */;
+			buildPhases = (
+				C2EF3A512DAB2B6E0029231C /* Sources */,
+				C2EF3A522DAB2B6E0029231C /* Frameworks */,
+				C2EF3A532DAB2B6E0029231C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C2EF3A572DAB2B6E0029231C /* DeepCure */,
+			);
+			name = DeepCure;
+			packageProductDependencies = (
+				C27EE6A82DC6F20D0075B666 /* FirebaseAnalytics */,
+				C27EE6AA2DC6F20D0075B666 /* FirebaseCore */,
+				C27EE6AD2DC6F52A0075B666 /* GoogleSignIn */,
+				C27EE6AF2DC6F52A0075B666 /* GoogleSignInSwift */,
+				C27EE6B12DC6F57A0075B666 /* FirebaseAuth */,
+				C27ECFA32DC85F75001397F9 /* FirebaseFirestore */,
+				C27ECFA72DC861BA001397F9 /* FirebaseStorage */,
+			);
+			productName = DeepCure;
+			productReference = C2EF3A552DAB2B6E0029231C /* DeepCure.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2EF3A4D2DAB2B6E0029231C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					C2EF3A542DAB2B6E0029231C = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = C2EF3A502DAB2B6E0029231C /* Build configuration list for PBXProject "DeepCure" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C2EF3A4C2DAB2B6E0029231C;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C27EE6A72DC6F20D0075B666 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				C27EE6AC2DC6F52A0075B666 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C2EF3A562DAB2B6E0029231C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2EF3A542DAB2B6E0029231C /* DeepCure */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2EF3A532DAB2B6E0029231C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2EF3A512DAB2B6E0029231C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C2EF3A612DAB2B6F0029231C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C2EF3A622DAB2B6F0029231C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C2EF3A642DAB2B6F0029231C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = DeepCure/DeepCure.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DeepCure/Preview Content\"";
+				DEVELOPMENT_TEAM = X64M3CK252;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeepCure/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "DeepCure needs access to your microphone to record and transcribe medical conversations.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "DeepCure needs access to speech recognition to transcribe your medical conversations.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "/Users/yaakulyasabbani/Downloads/bea2faa9-8994-4563-8a15-8d12e1432ccd.png";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ys5298.DeepCure;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C2EF3A652DAB2B6F0029231C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = DeepCure/DeepCure.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DeepCure/Preview Content\"";
+				DEVELOPMENT_TEAM = X64M3CK252;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeepCure/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "DeepCure needs access to your microphone to record and transcribe medical conversations.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "DeepCure needs access to speech recognition to transcribe your medical conversations.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "/Users/yaakulyasabbani/Downloads/bea2faa9-8994-4563-8a15-8d12e1432ccd.png";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ys5298.DeepCure;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2EF3A502DAB2B6E0029231C /* Build configuration list for PBXProject "DeepCure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2EF3A612DAB2B6F0029231C /* Debug */,
+				C2EF3A622DAB2B6F0029231C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2EF3A632DAB2B6F0029231C /* Build configuration list for PBXNativeTarget "DeepCure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2EF3A642DAB2B6F0029231C /* Debug */,
+				C2EF3A652DAB2B6F0029231C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C27EE6A72DC6F20D0075B666 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.12.0;
+			};
+		};
+		C27EE6AC2DC6F52A0075B666 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C27ECFA32DC85F75001397F9 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C27EE6A72DC6F20D0075B666 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		C27ECFA72DC861BA001397F9 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C27EE6A72DC6F20D0075B666 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		C27EE6A82DC6F20D0075B666 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C27EE6A72DC6F20D0075B666 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		C27EE6AA2DC6F20D0075B666 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C27EE6A72DC6F20D0075B666 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		C27EE6AD2DC6F52A0075B666 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C27EE6AC2DC6F52A0075B666 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		C27EE6AF2DC6F52A0075B666 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C27EE6AC2DC6F52A0075B666 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		C27EE6B12DC6F57A0075B666 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C27EE6A72DC6F20D0075B666 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C2EF3A4D2DAB2B6E0029231C /* Project object */;
+}
