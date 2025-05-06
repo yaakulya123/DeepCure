@@ -1,9 +1,7 @@
 # 🩺 DeepCure
 
-<div align="center">
-  <img src="DeepCure/Assets.xcassets/AppIcon.appiconset/AppIcon.png" alt="DeepCure Logo" width="200"/>
-  <p><em>Your Comprehensive Healthcare Management Solution</em></p>
-</div>
+![image](https://github.com/user-attachments/assets/decce3bd-eabf-43b1-be57-7336be0c2f4b)
+
 
 DeepCure is a state-of-the-art healthcare management application built for iOS that leverages Apple HealthKit integration, AI-powered medical assistance, and advanced health tracking capabilities to provide users with a complete solution for managing their medical information and health data.
 
@@ -76,16 +74,16 @@ DeepCure is a state-of-the-art healthcare management application built for iOS t
 
 ## 📱 Screenshots
 
-<div align="center">
-  <p>
-    <em>Home Dashboard</em> · <em>Health Profile</em> · <em>Medical Transcription</em> · <em>AI Guidance</em>
-  </p>
-  <!-- Placeholder for actual screenshots -->
-  <!-- <img src="screenshots/home.png" width="200" alt="Home Dashboard"/> -->
-  <!-- <img src="screenshots/profile.png" width="200" alt="Health Profile"/> -->
-  <!-- <img src="screenshots/transcription.png" width="200" alt="Medical Transcription"/> -->
-  <!-- <img src="screenshots/ai-guidance.png" width="200" alt="AI Guidance"/> -->
-</div>
+![image](https://github.com/user-attachments/assets/2d7fede3-9279-40fa-8c3a-5fbd2386d552)
+
+![image](https://github.com/user-attachments/assets/be1d71b5-ed8d-4749-ad11-c43e67a11582)
+
+![image](https://github.com/user-attachments/assets/66a880a1-786b-45c4-825d-0c4447053ee0)
+
+![image](https://github.com/user-attachments/assets/213cfc1c-3b08-4cd9-b239-04ea5202b938)
+
+
+
 
 ## 📂 Project Structure
 
