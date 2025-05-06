@@ -30,12 +30,6 @@ DeepCure is a state-of-the-art healthcare management application built for iOS t
 - **Attach documents and images** to records for comprehensive documentation
 - **Timeline view** to visualize your medical history chronologically
 
-### 🔄 QR Health Profile
-- **Generate secure QR codes** containing vital health information
-- **Share emergency health details** with medical providers instantly
-- **Optional encryption** for enhanced privacy with customizable access control
-- **Selective data sharing** - choose exactly what information to include
-- **Automatic expiry dates** for temporary access to your information
 
 ### 🧠 AI Medical Guidance
 - **AI-powered medical assistant** for answering health questions and concerns
@@ -57,7 +51,6 @@ DeepCure is a state-of-the-art healthcare management application built for iOS t
 - **Swift 5 & SwiftUI**: Modern UI development with Apple's latest frameworks
 - **HealthKit**: Deep integration with Apple's comprehensive health data framework
 - **Speech Recognition**: Native iOS speech-to-text capabilities with medical focus
-- **Core Image**: QR code generation and processing with encryption support
 - **Combine**: Reactive programming for efficient data flow management and UI updates
 
 ### Backend & Services
@@ -94,7 +87,6 @@ DeepCure/
 ├── AIGuidanceView.swift         # AI medical guidance interface
 ├── MedicalRecordsView.swift     # Medical records management
 ├── MedicalTranscriptionView.swift # Voice recording and transcription
-├── QRHealthProfileView.swift    # Health profile QR generation
 ├── Models/
 │   ├── APIConfig.swift          # API configuration
 │   ├── AppointmentModel.swift   # Appointment data model
